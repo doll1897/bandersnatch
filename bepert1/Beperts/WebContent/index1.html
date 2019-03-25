@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>XML HOME</title>
+<style>
+@CHARSET "ISO-8859-1";
+.vertical-menu {
+  width: 250px;
+  height: 550px;
+  overflow-y: auto;
+  overflow-x:none;
+  margin-top:75px;
+  margin-bottom:10px ;
+  
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;    
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px solid white;
+  float: left;
+  width: 75%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 15%;
+  padding: 20px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 2px solid white;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.new {
+	margin-left:350px;
+	margin-right:400px;
+	margin-top:50px;
+	marging-bottom:10px;
+	width:500px;
+}
+
+.column{
+  float: left;
+  padding: 0px;
+  height: 300px;
+  width:50%;
+  content: "";
+  display: table;
+  clear: both;
+  <!--font-family:elephant;-->
+  
+}
+
+.buttonN {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:black;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left:750px;
+  margin-right:200px;
+  margin-top:50px;
+  marging-bottom:10px;
+}
+
+.buttonN span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonN span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonN:hover span {
+  padding-right: 25px;
+}
+
+.buttonN:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttonP {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:black;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer-left;
+  margin-left:350px;
+  margin-right:750px;
+  margin-top:50px;
+  marging-bottom:10px;
+}
+
+.buttonP span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.buttonP span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonP:hover span {
+  
+  padding-right: 25px;
+}
+
+.buttonP:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.content {
+	margin-left:350px;
+	margin-right:400px;
+	margin-top:75px;
+	marging-bottom:10px;
+	width:500px;
+}
+
+.table-bordered, td, th{
+	 border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h1 align="center">XML</h1>
+
+<form class="example" action="keywordSearchServlet" style="margin:auto;max-width:650px" method="post">
+  <input type="text" placeholder="Search.." name="keyword">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<div class="column">
+<div class="new">
+<h1 align="center">XML</h1>
+<p>XML stands for <b>Ex</b>tensible <b>M</b>arkup <b>L</b>anguage and is a text-based markup language derived from Standard Generalized Markup Language (SGML). This tutorial will teach you the basics of XML. The tutorial is divided into sections such as
+XML Basics, Advanced XML, and XML tools. Each of these sections contain related topics with simple and useful examples.</p>
+<h1 align="center">Audience</h1>
+<p>This reference has been prepared for beginners to help them understand the basic to advanced concepts related to XML. This tutorial will give you enough understanding on XML from where you can take yourself to a higher level of expertise.</p>
+<h1 align="center">Prerequisites</h1>
+<p>Before proceeding with this tutorial, you should have basic knowledge of HTML and JavaScript.</p>
+</div>
+</div>
+
+<a href="overview.html"> <button class="buttonN" style="vertical-align:middle"><span>Next </span></button></a>
+
+<div class="vertical-menu">
+<a class="_vertical-menu" href="index.html">XML HOME</a>
+<a class="_vertical-menu" href="overview.html">XML Overview</a>
+<a class="_vertical-menu" href="syntax.html">XML Syntax</a>
+<a class="_vertical-menu" href="tags.html">XML Tags</a>
+<a class="_vertical-menu" href="elements.html">XML Elements</a>
+<a class="_vertical-menu" href="attributes.html">XML Attributes</a>
+<a class="_vertical-menu" href="namespaces.html">XML Namespaces</a>
+<a class="_vertical-menu" href="characterent.html">XML Character Entities</a>
+<a class="_vertical-menu" href="parser.html">XML Parser</a>
+<a class="_vertical-menu" href="cdta.html">XML CDATA Section</a>
+<a class="_vertical-menu" href="dtd.html">XML DTD</a>
+<a class="_vertical-menu" href="schema.html">XML Schema</a>
+<a class="_vertical-menu" href="dom.html">XML DOM</a>
+<a class="_vertical-menu" href="tree.html">XML Tree</a>
+<a class="_vertical-menu" href="xpath.html">XML XPath</a>
+<a class="_vertical-menu" href="xslt.html">XML XSLT</a>
+<a class="_vertical-menu" href="xquery.html">XML XQuery</a>
+<a class="_vertical-menu" href="xlink.html">XML XLink</a>
+<a class="_vertical-menu" href="server.html">XML Server</a>
+<a class="_vertical-menu" href="database.html">XML Database</a>
+<a class="_vertical-menu" href="processor.html">XML Processor</a>
+</div>
+
+</body>
+</html>
